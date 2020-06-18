@@ -1,0 +1,22 @@
+digraph map {
+	temple_1a[label="temple_1a",color=red,style=filled, fillcolor="#ffefef"];
+	temple_1a -> temple_2;
+	village[label="village"];
+	village -> dock [label="iron key"];
+	village -> basement;
+	dock[label="dock"];
+	dock -> village;
+	dock -> jungle;
+	desert[label="desert\niron key",color=red,style=filled, fillcolor="#ffefef"];
+	desert -> oasis;
+	jungle[label="jungle"];
+	jungle -> temple_entrance;
+	basement[label="basement\niron key"];
+	basement -> village;
+	temple_entrance[label="temple_entrance"];
+	temple_entrance -> temple_1a [label="skull key"];
+	temple_entrance -> temple_1b [label="serpent key"];
+	oasis[label="oasis",color=red,style=filled, fillcolor="#ffefef"];
+	temple_1b[label="temple_1b\nserpent key",color=red,style=filled, fillcolor="#ffefef"];
+	temple_2[label="temple_2\nskull key",color=red,style=filled, fillcolor="#ffefef"];
+}
